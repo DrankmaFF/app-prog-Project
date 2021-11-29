@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f89cf" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f58c1c" height="350.0" layoutX="25.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="75.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="450.0" />
+      <Label layoutX="35.0" layoutY="34.0" text="Timeline">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="timeline" editable="false" layoutX="75.0" layoutY="75.0" prefHeight="250.0" prefWidth="450.0" />
+      <Button fx:id="refresh" layoutX="416.0" layoutY="34.0" mnemonicParsing="false" onAction="#displayTweets" text="Refresh Timeline" />
+      <Button fx:id="newTweet" layoutX="87.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchtoEditor" text="New Post" />
+   </children>
+</AnchorPane>
