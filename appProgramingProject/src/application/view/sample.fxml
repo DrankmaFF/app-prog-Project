@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1A10B2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Controller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/tweeter.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="412.0" fitWidth="345.0" layoutX="-150.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/lockScreen.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="-126.0" layoutY="178.0" prefHeight="45.0" prefWidth="117.0" text="Username:" textFill="#1a10b2">
+               <font>
+                  <Font name="Segoe UI Symbol" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="-126.0" layoutY="233.0" prefHeight="29.0" prefWidth="84.0" text="Password:" textFill="#1a10b2">
+               <font>
+                  <Font name="Segoe UI Symbol" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="-9.0" layoutY="188.0" promptText="Username" />
+            <TextField fx:id="password" layoutX="-9.0" layoutY="235.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="-3.0" layoutY="309.0" mnemonicParsing="false" onAction="#checkLogin" text="Log In" />
+            <Label fx:id="incorrectLogin" layoutX="-131.0" layoutY="277.0" prefHeight="17.0" prefWidth="315.0" textFill="RED" />
+            <Button fx:id="registerButton" layoutX="-25.0" layoutY="343.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="94.0" text="Register" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
