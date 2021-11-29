@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UserProfileController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0C2340;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="108.0" layoutY="40.0" prefHeight="26.0" prefWidth="116.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="timeline" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#toTimeline" text="To Timeline" />
+            <Button fx:id="logOut" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+            <Label layoutX="147.0" layoutY="93.0" opacity="0.71" prefHeight="18.0" prefWidth="200.0" text="Describe yourself!" textFill="LIGHTBLUE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="23.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionText" layoutX="147.0" layoutY="53.0" prefHeight="41.0" prefWidth="200.0" promptText="Add To Description : " />
+            <Button fx:id="addToDescription" layoutX="365.0" layoutY="54.0" mnemonicParsing="false" onAction="#addToDescription" text="Add" />
+            <Label fx:id="desc" layoutX="147.0" layoutY="130.0" prefHeight="94.0" prefWidth="343.0" style="-fx-background-color: #ADD8E6;" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="94.0" fitWidth="130.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/utsa-roadrunners-basketball.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f58c1c" height="81.0" layoutY="319.0" opacity="0.48" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f58c1c" height="400.0" layoutX="509.0" opacity="0.48" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c2340" height="81.0" layoutX="509.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+            <Label fx:id="usernameLabel" layoutX="152.0" layoutY="20.0" prefHeight="26.0" prefWidth="194.0" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
